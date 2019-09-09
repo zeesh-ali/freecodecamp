@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style media="screen">
+  #main{
+    text-align:center;
+    background-color:brown;
+    font-size:2vw;
+  }
+  #inner{
+    font-size:100vm;
+    background-color:lightgrey;
+    padding:50px;
+    margin-left:200px;
+    margin-right:200px;
+  }
+  #radbtn{
+    display:block;
+  }
+  #chkbtn{
+    display:block;
+  }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Survey Form</h1>
+      <div id="inner">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form" action="/new_page.">
+         <label id="name-label" for="uname">Name: </label>
+         <input id="name" type="text" name="uname" value="" placeholder="Name" required> <br><br>
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" name="email" value="" placeholder="Email" required> <br><br><br>
+        <label id="number-label" for="marks">Marks: </label>
+        <input id="number" type="number" name="marks" min="0" max="100" value="" placeholder="Marks" step="10">
+        <datalist id="number">
+          <option value="0" label="0%"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50" label="50%"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100" label="100%"></option>
+        </datalist><br><br>
+        <label id="dropdown" for="subject">Subject: </label>
+        <select id="dropdown" class="subject" name="subject">
+        <option id="dropdown" value="A">Arithmetic</option>
+        <option id="dropdown" value="B">Biology</option>
+        <option id="dropdown" value="C">Chemistry</option>
+        </select>
+        <br><br>
+        <label id="radio-label" for="vehicle">Which Vehicle do you drive ?</label>
+        <div id=radbtn">
+        <input type="radio" name="vehicle" value="Bike"> I have a bike<br>
+        <input type="radio" name="vehicle" value="Car" > I have a car<br><br>
+        </div>
+        <label id="checkbox-label" for="work">What do you like to work on ?</label>
+        <div id="chkbtn">
+        <input type="checkbox" name="work" value="frontend">frontend<br>
+        <input type="checkbox" name="work" value="backend" >backend<br>
+        <input type="checkbox" name="work" value="db" >database<br>
+        <input type="checkbox" name="work" value="design" >design<br><br>
+        </div>
+        <textarea name="AddComments" rows="8" cols="80" placeholder="Enter your comments ...."></textarea><br><br>
+        <button id="submit" type="submit" value="submit">SUBMIT !</button>
+      </form>
+
+      </div>
+      </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
