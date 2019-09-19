@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      #header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color:hsl(240, 19%, 25%);
+      }
+      #header-img{
+        float:left;
+      }
+      #title{
+        letter-spacing:10px;
+      }
+      #main{
+      margin-right:auto;
+      margin-left:auto;
+      text-align:center;
+      color:white;
+      width:100%;
+      background:url('https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg');
+      }
+      #AL1,#AL2,#AL3{
+        margin:15px;
+        padding:20px;
+      }
+      ul { display:table; margin:0 auto;}
+      #title{
+        font-size:40px;
+      }
+      #description{
+        font:Brush;
+      }
+      #sidehd{
+        float:right;
+        display:fixed;
+      }
+      .nav-link{
+        display:inline-flex;
+        padding-top:5px;
+        padding-left:30px;
+        margin-left:20px;
+        padding-right:30px;
+        margin-right:20px;
+        float:right;
+        color:white;
+      }
+      #TOUR{
+        letter-spacing:4px;
+      }
+      .nav-link:hover {
+        color: hotpink;
+      }
+      #AL1{
+        display:inline-block;
+      }
+      #AL2{
+        display:inline-block;
+      }
+      #AL3{
+        display:inline-block;
+      }
+      #ph{
+        width: 40%;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align:center;
+      }
+      footer{
+        letter-spacing:4px;
+        background-color:rgb(0,0,0);
+      }
+      @media (max-width:100px){
+        #main{
+        font-size:8px;
+        }
+      }
+
+      </style>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <div id="main">
+    <header id="header">
+    <img id="header-img" src="https://logodix.com/logo/20046.png" width="300" height="35" alt="logo">
+    <div id="sidehd">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#ALBUMS">ALBUMS</a>
+      <a class="nav-link" href="#TOUR">TOUR</a>
+      <a class="nav-link" href="#ABOUT">ABOUT</a>
+      <a class="nav-link" href="#MERCHANDISE">MERCH</a>
+    </nav>
+    </div>
+    </header>
+    <div id="content">
+    <h1 id="title">COLDPLAY</h1>
+    <p id="description">The coldest band in town ...</p>
+    <img id="ph" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVh8_t8aLJvT53fIbMtdtwUwMXwihBZmFTi2e_aiY7F3rVpUcCQ" alt="Coldplay" ><br><br>
+    <iframe id="video" width="500" height="380" src="https://www.youtube.com/embed/=eAbDNUj8pxo?autoplay=1" frameborder="0" allowfullscreen></iframe><br><br><br>
+    <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" value="" placeholder="Enter your email"></input>
+      <input id="submit" type="submit" src="https://www.freecodecamp.com/email-submit"></input>
+    </form>
+    <a id="ALBUMS">
+      <div id="AL1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw8M0u05ZC5e-ZB4koamKGKwtBeJ_CAGht0QtqzJ6mJCWEmQM" alt="ALBUM1" width="200px" height="200px"></div>
+      <div id="AL2"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f9c63719118275.562d540b3a8c0.jpg" alt="ALBUM2" width="200px" height="200px"></div>
+      <div id="AL3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWEDKio-142h0HtRoNa7eqkMoNHujXb-Hsb2_PyXxNV-CvBAh" alt="ALBUM3" width="200px" height="200px"></div>
+    </a>
+    <br>
+    <div id="TR">
+    <h1><a id="TOUR">TOURS</a></h1>
+    <ul id="TRLIST">
+      <li>LOS ANGELS CA - 23 OCT 2019</li>
+      <li>NEW YORK   NY - 15 NOV 2019</li>
+      <li>HARTFORD   CT - 31 DEC 2019</li>
+      <li>CHICAGO    IL - 17 JAN 2020</li>
+    </ul>
+    </div>
+    <br>
+    CHECK OUT THE OFFICIAL <a id="MERCHANDISE" href="https://coldplayofficialukshop.com/">MERCH STORE</a>
+    </div>
+    <br>
+    <footer>
+    <a id="ABOUT">COLDPLAY&copy; ESTABLISHED 1996</a>
+    </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
